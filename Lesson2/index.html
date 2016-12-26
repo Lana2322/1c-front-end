@@ -1,74 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Шпаргалка по JS</title>
+    <style>
+    html, body{
+        height: 100%;
+        margin: auto;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
 </head>
 <body>
-<script>
-    var dictionary = { key: "value"};
-    dictionary == { key: "value"};
-    var dict1 = dictionary;
-    dict1 == dictionary
-    console.log("Привет, добро пожаловать\nна курс \"Web-разработка\"")
-    var string = " The quick brown fox quickly jumps over the lazy dog. ";
-    var modification;
-    string[0] + string[1]
-    /*Индекс вхождения*/
-    string.indexOf("quick");
-    string.lastIndexOf("quick");
-    /*Разбиение на массив по разделителю*/
-    var splitted = string.split(" ");
-    splitted;
-    /*замена*/
-    modification = string.replace("quick", "slow");
-    modification;
-    /*объединение массива в строку*/
-    splitted.join("-");
-    /*выделение подстроки*/
-    var start = 17;
-    var length = 3;
-    string.substr(start, length);
-    /*приведение в нижний или в верхний регистр*/
-    string.toUpperCase();
-    string.toLowerCase();
-    /*удаление пробелов в начале и в конце строки*/
-    modification = string.trim();
-    string;
-    /*МАТЕМАТИЧЕСКИЕ*/
-    /*ВОЗВЕДЕНИЕ В СТЕПЕНЬ*/
-    Math.pow(2, -3);
-    /*извлечение квадратного корня*/
-    Math.sqrt(9);
-    /*округление*/
-    Math.ceil(1.25);
-    Math.round(1.25);
-    /*сигнум*/
-    Math.sign(42);
-    /*минимум и максимум*/
-    Math.min(2, 0, -5);
-    Math.max(2, 0, -5);
-    /*интеративные*/
-    var array = [1, 2, 3, 4, 5];
-    array.map(function(x) {
-        return x * 2;
-    });
-    array.filter(function(x) {
-        return x % 2 == 1;
-    });
-    var copy = [];
-    array.forEach(function(x) {
-        copy.unshift(x);
-    });
-    /*сортировка и разворот*/
-    var array1 = [4, 7, 6, 666, 329];
-    array1.sort();
-    array1.reverse();
-    /*тернарный оператор*/
-    /*<Условие> ? <Выражение true> : <Выражение false>*/
-    function getVerdict(temp){
-        return temp > 0 ? "Water" : "Ice";
-    };
-    getVerdict(32);
-</script>
+    <input type="text" id="fiend">
+<script src="script.js"></script>
 </body>
 </html>
