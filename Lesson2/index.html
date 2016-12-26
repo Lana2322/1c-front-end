@@ -59,6 +59,16 @@
     array.forEach(function(x) {
         copy.unshift(x);
     });
+    /*сортировка и разворот*/
+    var array1 = [4, 7, 6, 666, 329];
+    array1.sort();
+    array1.reverse();
+    /*тернарный оператор*/
+    /*<Условие> ? <Выражение true> : <Выражение false>*/
+    function getVerdict(temp){
+        return temp > 0 ? "Water" : "Ice";
+    };
+    getVerdict(32);
 </script>
 </body>
 </html>
