@@ -10,6 +10,24 @@
     var dict1 = dictionary;
     dict1 == dictionary
     console.log("Привет, добро пожаловать\nна курс \"Web-разработка\"")
+    var string = " The quick brown fox quickly jumps over the lazy dog. ";
+    var modification;
+    string[0] + string[1]
+    /*Индекс вхождения*/
+    string.indexOf("quick");
+    string.lastIndexOf("quick");
+    /*Разбиение на массив по разделителю*/
+    var splitted = string.split(" ");
+    splitted;
+    /*замена*/
+    modification = string.replace("quick", "slow");
+    modification;
+    /*объединение массива в строку*/
+    splitted.join("-");
+    /*выделение подстроки*/
+    var start = 17;
+    var length = 3;
+    string.substr(start, length);
 </script>
 </body>
 </html>
