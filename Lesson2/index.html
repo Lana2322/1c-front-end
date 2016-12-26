@@ -47,6 +47,18 @@
     /*минимум и максимум*/
     Math.min(2, 0, -5);
     Math.max(2, 0, -5);
+    /*интеративные*/
+    var array = [1, 2, 3, 4, 5];
+    array.map(function(x) {
+        return x * 2;
+    });
+    array.filter(function(x) {
+        return x % 2 == 1;
+    });
+    var copy = [];
+    array.forEach(function(x) {
+        copy.unshift(x);
+    });
 </script>
 </body>
 </html>
